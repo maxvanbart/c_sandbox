@@ -11,13 +11,32 @@ int fibonacci(int n) {
 }
 
 
+//struct database {
+//    int[] data;
+//    int length;
+//};
+
+
 
 int main() {
     printf("Hello World!\n");
 
-    int i = fibonacci(8);
-    const char out = (char) i;
+    int i = 8;
+    int j = fibonacci(i);
 
-    printf("The fibonacci number is: %d\n", i);
+    printf("The %dth fibonacci number is: %d\n", i, j);
+
+    data = new double[i];
+
+    for (int k = 0; k < i; k++) {
+        data[k] = k;
+    };
+
+    for (int k = 0; k < i; k++) {
+        printf("%d\n", data[k]);
+    };
+
+    delete[data];
+
     return 0;
 }
