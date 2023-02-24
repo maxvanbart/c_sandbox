@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 int fibonacci(int n) {
     if (n <= 0) {
@@ -15,6 +16,17 @@ int fibonacci(int n) {
 //    int[] data;
 //    int length;
 //};
+
+
+struct NotAClass {
+    double a;
+    double b;
+    double c;
+};
+
+double pythagoras(struct NotAClass C) {
+    return sqrt(pow(C.b, 2) + pow(C.a, 2));
+}
 
 
 
@@ -35,6 +47,15 @@ int main() {
     for (int k = 0; k < i; k++) {
         printf("%f\n", data[k]);
     }
+
+    struct NotAClass class;
+    class.a = 3;
+    class.b = 4;
+    class.c = pythagoras(class);
+
+    printf("%f\n", class.c);
+
+
 
     return 0;
 }
