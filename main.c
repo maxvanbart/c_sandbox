@@ -73,13 +73,8 @@ struct matrix matrix_mult(struct matrix a, struct matrix b) {
         struct matrix c;
         return c;
     }
-    struct matrix c = create_matrix(colsc, rowsc, datac)
-
+    struct matrix c = create_matrix(colsc, rowsc, datac);
 };
-
-
-
-
 
 int main() {
     printf("Hello World!\n");
